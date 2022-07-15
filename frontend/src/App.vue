@@ -1,0 +1,45 @@
+<template>
+  <nav>
+    <!-- <router-link to="/">Весь список заказов</router-link> -->
+    <!-- <router-link to="/add_item">Добавить заказ</router-link> -->
+  </nav>
+  <Table></Table>
+</template>
+
+<script>
+import Table from '@/components/Table.vue'
+
+
+export default {
+  name: 'App',
+  components: {
+    Table
+  }
+
+}
+</script>
+
+<style>
+#app {
+  font-family: 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS';
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-align: center;
+  vertical-align: middle;
+  color: #2c3e50;
+  background-color: aliceblue;
+}
+
+nav {
+  padding: 30px;
+}
+
+nav a {
+  font-weight: bold;
+  color: #2c3e50;
+}
+
+nav a.router-link-exact-active {
+  color: #42b983;
+}
+</style>
